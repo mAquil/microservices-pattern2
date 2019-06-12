@@ -3,7 +3,7 @@ services:
 
 
   eurekaserver:
-    image: eureka-servcie:1.0.0
+   # image: eureka-servcie:1.0.0
     build: eureka-service/
     restart: always
     network_mode: host
@@ -14,7 +14,7 @@ services:
 
 
   zuulgateway:
-    image: zuul-service:1.0.0
+    #image: zuul-service:1.0.0
     build: zuul-service/
     restart: always
     network_mode: host
@@ -27,7 +27,7 @@ services:
 
 
   configserver:
-     image: config-server:1.0.0
+    # image: config-server:1.0.0
      build: config-server/
      restart: always
      network_mode: host
@@ -40,7 +40,7 @@ services:
 
 
   muzixservice:
-    image: muzix-service:1.0.0
+    #image: muzix-service:1.0.0
     build: muzix-service/
     restart: always
     network_mode: host
@@ -57,7 +57,7 @@ services:
 
 
   userservice:
-    image: user-service:1.0.0
+#    image: user-service:1.0.0
     build: user-service/
     restart: always
     network_mode: host
